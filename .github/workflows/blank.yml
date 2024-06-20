@@ -26,8 +26,8 @@ jobs:
     
       - name: teste
         run: |
-            echo $VARVAR
-            echo $SECRETO
+            "echo: $VARVAR"
+            "echo: $SECRETO"
         env:
           VARVAR: ${{ vars.VARIABLE_VAL }}
           SECRETO: ${{ secrets.SEGREDO }}
